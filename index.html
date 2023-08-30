@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+      }
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.3s;
+      }
+      .nav-link:hover {
+        color: #ffc107;
+      }
+      .active-link {
+        color: #ffc107;
+        font-weight: bold;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px;
+        color: #fff;
+      }
+      .content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+      .content p {
+        font-size: 1.5rem;
+      }
+      .email-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .email-button:hover {
+        background-color: lemonchiffon;
+      }
+      .social-icons {
+        display: flex;
+        align-items: center;
+      }
+      .social-icon {
+        font-size: 30px;
+        margin-right: 10px;
+        color: #ffc107;
+      }
+      .social-icon:hover {
+        background-color: lemonchiffon;
+      }
+
+      /* Updated styles for skill titles and percentages */
+      .skill-title {
+        font-size: 40px;
+      }
+      
+      
+      .skill-percentage {
+        font-size: 40px;
+      }
+
+      /* Styles for project images */
+      .project-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+      .project-image {
+        width: 40%;
+      }
+      .project-image img {
+        width: 100%;
+        height: auto;
+      }
+      .project-title {
+        font-size: 40px;
+      }
+      #contact-me label {
+      text-align: center;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="nav-link active-link" href="#">Home</a>
+      <a class="nav-link" href="#">About Me</a>
+      <a class="nav-link" href="#">Skills</a>
+      <a class="nav-link" href="#">Projects</a>
+      <a class="nav-link" href="#">Contact Me</a>
+    </div>
+
+    <section id="about-me">
+      <div class="content">
+        <h1><span class="active-link">Welcome to</span> My Portfolio</h1>
+        <p><span class="active-link">Hi, I am</span> Duishonbek Abdykerimov</p>
+        <p>
+          <span class="active-link">Salesforce Specialist & Developer</span>
+        </p>
+
+        <a class="email-button" href="mailto:abdykerimovdk@gmail.com"
+          >Email Me</a
+        >
+        <div class="social-icons">
+          <a
+            href="https://www.salesforce.com/trailblazer/dabdykerimov1"
+            target="_blank"
+          >
+            <i class="fab fa-salesforce social-icon"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/duishonbek-abdykerimov-583001154/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin social-icon"></i>
+          </a>
+        </div>
+      </div>
+      <img
+        src="img2jpeg.png"
+        alt="About me"
+        style="width: 100%; height: 100%"
+      />
+    </section>
+
+    <section id="skills">
+      <div class="content">
+        <h1><span class="active-link">Skills</span></h1>
+        <div
+          class="wow fadeInUp animated"
+          data-wow-delay="1s"
+          style="
+            visibility: visible;
+            animation-delay: 1s;
+            animation-name: fadeInUp;
+          "
+        >
+          <strong class="skill-title"
+            >Salesforce Configuration and Customization</strong
+          >
+          <span class="pull-right skill-percentage">95%</span>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-primary"
+              role="progressbar"
+              aria-valuenow="95"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 90%"
+            ></div>
+          </div>
+          <div
+            class="wow fadeInUp animated"
+            data-wow-delay="1.2s"
+            style="
+              visibility: visible;
+              animation-delay: 1.2s;
+              animation-name: fadeInUp;
+            "
+          >
+            <strong class="skill-title">LWC/Apex</strong>
+            <span class="pull-right skill-percentage">100%</span>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-primary"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 100%"
+              ></div>
+            </div>
+            <div
+              class="wow fadeInUp animated"
+              data-wow-delay="1.4s"
+              style="
+                visibility: visible;
+                animation-delay: 1.4s;
+                animation-name: fadeInUp;
+              "
+            >
+              <strong class="skill-title">HTML/JS/CSS</strong>
+              <span class="pull-right skill-percentage">90%</span>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-primary"
+                  role="progressbar"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="content">
+        <h1><span class="active-link">Projects</span></h1>
+        <div class="project-images">
+          <div class="project-image">
+            <img src="img3.jpeg" alt="project" />
+            <img src="img4.jpeg" alt="project" />
+            <img src="img5.jpeg" alt="project" />
+            <img src="img6.jpeg" alt="project" />
+            <img src="img7.jpeg" alt="project" />
+          </div>
+          <br></br>
+          <section id="contact-me">
+            <div class="content">
+              <h1><span class="active-link">Contact Me</span></h1>
+              <form action="mailto:your@email.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </section>
+        
+        </body>
+        </html>
+        
+        
+        
+        
+        
+
+          
